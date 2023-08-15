@@ -1,0 +1,111 @@
+
+html{
+font-family: 'Manrope', sans-serif;
+background-color:#0D0D0D;
+
+}
+/*  ESTILOS NAV  */
+nav{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+
+    background-color:#0D0D0D;
+    height: 8rem;
+    border-bottom: 1px solid#3D9DF2;
+}
+
+nav h1{
+    font-size: 3.5rem;
+    color: #3D9DF2;
+    font-family: 'Handjet', cursive;
+    cursor: default;
+}
+
+/*  BODY   */
+.contenedor-princ{
+    display: grid;
+    grid-template-columns: 15% 85%;
+
+
+}
+/*SIDEBAR*/
+.contenedor-princ section:nth-child(1){
+    height: auto;
+    background-color:#3D9DF2;
+
+
+}
+
+    /*sidebar fijo*/
+.sidebar div{
+
+    width: 15%;
+    position: fixed;
+}
+
+.sidebar div h2{
+    color:#0D0D0D;
+    border: 1px solid white;
+    
+    font-size: 2rem;
+    font-weight:400;
+    font-family: 'Handjet', cursive;
+
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+
+} 
+
+.sidebar div h2:hover{
+    background-color: white;
+    cursor:pointer;
+
+
+}
+
+/*CONTENEDOR PRINCIPAL*/
+.contenido{
+    background-color:#0D0D0D;
+    height: 200vh;
+    padding: 4rem;
+    
+
+
+}
+
+.contenido div:nth-child(n){
+    margin: 2rem;
+}
+
+/*perfil*/
+.div-perfil{
+
+    width: auto;
+
+}
+
+.div-perfil p{
+    color: white;
+    text-align: center;
+
+
+@media screen{ max-width: 1175px;
+    
+}
+
+
+
+
+
+
+
+/*  FOOTER  */
+footer{
+    background-color:#0D0D0D;
+
+    height: 10rem;
+
+}
