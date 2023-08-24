@@ -8,7 +8,7 @@ scroll-behavior: smooth;
 /*  ESTILOS NAV  */
 nav{
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
 
@@ -22,6 +22,11 @@ nav h1{
     color: #3D9DF2;
     font-family: 'Handjet', cursive;
     cursor: default;
+    
+}
+.nav-fantasma{
+    visibility: collapse;
+
 }
 
 /*  BODY   */
@@ -43,23 +48,26 @@ nav h1{
 
     width: 15%;
     position: fixed;
+    display: flex;
+    flex-direction: column;
+
+
 }
 
-.sidebar div h2 {
+
+.sidebar div a {
     color:#0D0D0D;
-    border: 1px solid white;
-    
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight:400;
     font-family: 'Handjet', cursive;
 
-    padding: 1rem;
-    margin: 1rem;
+    padding: 1.5rem 1rem;
+    margin: .5rem;
     text-align: center;
 
 } 
 
-.sidebar div h2:hover{
+.sidebar div a:hover{
     background-color: white;
     cursor:pointer;
 
@@ -68,12 +76,7 @@ nav h1{
 
 /*CONTENEDOR PRINCIPAL*/
 /*CONTENEDOR PRINCIPAL*/
-.sitio-en-desarrollo{
-    position:absolute;
-    right: 2rem;
-    top: 6rem;
-    color: white;
-}
+
 .contenido{
     background-color:#0D0D0D;
     height: 200vh;
@@ -279,8 +282,120 @@ nav h1{
 .nostyle{
     text-decoration: none;
     color: black;
+    text-align: center;
+
 }
 
+/* MEDIA QUERIE 1130*/
+/* MEDIA QUERIE 1130*/
+@media (max-width: 1130px) {
+.contenedor-princ{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-princ section:nth-child(1){
+    height: 0rem;
+
+}
+
+nav{
+    height: 12rem;
+}
+
+.nav-fantasma{
+    visibility: visible;
+    height: 0rem;
+    width: 100%;
+}
+
+.sidebar div{
+    background-color:#3D9DF2;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0rem;
+
+
+
+
+}
+
+.div-trabajos {
+    height: 12rem;
+}
+
+.contenido{
+    padding: 1rem;
+}
+
+.contenido >div:nth-child(n){
+    margin: 1rem;
+}
+
+
+}
+
+/* MEDIA QUERIE 950*/
+/* MEDIA QUERIE 950*/
+@media (max-width: 950px) {
+/* perfil */
+.div-perfil{
+    display: flex;
+    flex-direction: column;
+}    
+.avatar{
+    visibility: collapse;
+}
+
+/* desarrollos */
+.div-trabajos > div{
+    display: flex;
+    flex-direction: column;
+}
+.cont-img, .cont-img2{
+    visibility: collapse;
+}
+
+}
+
+/* MEDIA QUERIE 510*/
+/* MEDIA QUERIE 510*/
+@media (max-width: 510px) {
+    .sidebar div a {
+        font-size: 1.3rem;
+        padding: 1.5rem .5rem;
+        margin: .2rem;
+    } 
+    nav h1{
+        font-size: 2.5rem;
+    }
+
+    .contenido{
+        padding: 0rem;
+    }
+    
+    .contenido >div:nth-child(n){
+        margin: .5rem;
+    }
+
+    .div-trabajos {
+        height: 15rem;
+    }
+
+/*  info contacto   */
+    .cont-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
+
+
+}
 
 
 
