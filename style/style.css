@@ -367,7 +367,7 @@ nav{
     display: flex;
     flex-direction: column;
 }
-.cont-img, .cont-img2{
+.cont-img, .cont-img2, .cont-img3{
     visibility: collapse;
 }
 
@@ -394,7 +394,7 @@ nav{
     }
 
     .div-trabajos {
-        height: 15rem;
+        height: 20rem;
     }
 
 /*  info contacto   */
