@@ -116,7 +116,7 @@ nav h1{
 }
 
 .avatar{
-    background-image: url(../img/perfil-real.png);
+    background-image: url(../img/perfil-real.jpeg);
     border: 1px solid white;
     
     height: 9rem;
@@ -184,7 +184,17 @@ nav h1{
 }
 
 .cont-img2{
-    background-image: url(../img/alina2.png);
+    background-image: url(../img/onedrop_01.png);
+    background-repeat: no-repeat;
+    background-size:contain ;
+    background-position:center center ;
+
+    height: 100%;
+    width: 100%;
+}
+
+.cont-img3{
+    background-image: url(../img/biblio_01.png);
     background-repeat: no-repeat;
     background-size:contain ;
     background-position:center center ;
